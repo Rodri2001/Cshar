@@ -66,12 +66,35 @@ for (int i = 0; i < 3; i++)
     score++;
 }
 
-string[] names = {"Mario","Luigi","Bowser"};
+string[] names = { "Mario", "Luigi", "Bowser" };
 
 
 // lo que hace este codigo es agregarle un . a cada elemento del array
 
-for(int i = 0; i < 3; i++){
- names[i] += ".";
+for (int i = 0; i < 3; i++)
+{
+    names[i] += ".";
 }
+
+// funciones 
+// una funcion para preder o apagar la luz
+
+bool light;
+
+// void es la palabra magica para poder crear funciones en C#
+// lo unico que se puede declarar fuera de las funciones son las variables
+
+void Switch()
+{
+    if (light == false)
+    {
+        light = true;
+    }
+    else
+    {
+        light = false;
+    }
+
+}
+
 
