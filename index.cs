@@ -1,5 +1,6 @@
 // Cosas basicas para poder programar un video juego
-
+// nota de lo mas importante en C# siempre terminar el codigo
+// con punto y coma ;
 
 //para declarar variables 
 //integer, float ,sting , boolean
@@ -32,3 +33,9 @@ string[] names = { "Mario", "Luigi" };
 int number = new init[1, 2, 3];
 // declaracion de array en cadena 
 string[] nombres = new string[3];
+
+string mainCharacter;
+mainCharacter = names[0]; // agarra el primero dela lista names[0] ahora maincharacter es mario
+
+//operadores condicionales 
+bool win;
