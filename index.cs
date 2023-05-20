@@ -83,6 +83,8 @@ bool light;
 
 // void es la palabra magica para poder crear funciones en C#
 // lo unico que se puede declarar fuera de las funciones son las variables
+// la razones la misma vive y muere en su scope
+
 
 void Switch()
 {
@@ -97,4 +99,19 @@ void Switch()
 
 }
 
+// pasar propiedad por parametros
+
+void ScoreManager (){
+    int score = 0;
+    // de esta manera solo pasamos el valor de la variable 
+  // pero si le decimos a score que se guarde la informacion de la funcion mantiene el valor  
+ score = AddOne(score);
+}
+
+void AddOne (int a){
+    // a es score y se le esta sumando 1
+    a++;
+    // en este caso es importante devolver el valor , para que no se pierda en el limbo
+    return a;
+}
 
