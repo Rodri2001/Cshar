@@ -20,11 +20,14 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1000f * Time.deltaTime, 0));
             // Este codigo sirve para poder dar vida a las animaciones atravez de un boolean
             gameObject.GetComponent<Animator>().SetBool("move",true);
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
         if (Input.GetKey("right")) {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1000f * Time.deltaTime, 0));
               // Este codigo sirve para poder dar vida a las animaciones atravez de un boolean
             gameObject.GetComponent<Animator>().SetBool("move", true);
+            // Este codigo rota la animacion 
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
         if (!Input.GetKey("left") && !Input.GetKey("right"))
         {
