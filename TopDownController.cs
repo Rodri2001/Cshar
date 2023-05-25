@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-
+ // uso [SerializeField] para que unity pueda acceder a mi variable aunque sea privada
     [SerializeField] private float velocidadDeMovimiento;
 
     [SerializeField] private Vector2 direccion;
